@@ -1,0 +1,21 @@
+ID,Performed By,Timestamp,Details
+1,admin@example.com,2025-01-18 19:58:08,NEW USER CREATED: admin@example.com
+2,hr@example.com,2025-01-18 19:58:08,NEW USER CREATED: hr@example.com
+3,manager@example.com,2025-01-18 19:58:08,NEW USER CREATED: manager@example.com
+4,abdelffettah@gmail.com,2025-01-18 19:59:34,NEW USER CREATED: abdelffettah@gmail.com
+5,abdelffettah@gmail.com,2025-01-18 20:00:43, USER Login: abdelffettah@gmail.com
+6,abdelffettah@gmail.com,2025-01-18 20:01:46,Updated employee with ID: 3
+7,abdelffettah@gmail.com,2025-01-18 20:02:36,Deleted employee with ID: 9
+8,manager11@gmail.com,2025-01-18 20:03:36,NEW USER CREATED: manager11@gmail.com
+9,abdelffettah@gmail.com,2025-01-18 20:04:07, USER Login: abdelffettah@gmail.com
+10,abdelffettah@gmail.com,2025-01-18 20:04:18,ASSIGN Departement Human Resources TO User: manager11@gmail.com
+11,manager11@gmail.com,2025-01-18 20:04:46, USER Login: manager11@gmail.com
+12,abdelffettah@gmail.com,2025-01-18 20:05:46, USER Login: abdelffettah@gmail.com
+13,abdelffettah@gmail.com,2025-01-18 20:05:59,Created employee with ID: 12
+14,abdelffettah@gmail.com,2025-01-18 20:07:28,add Permission: MANAGER_READ
+15,abdelffettah@gmail.com,2025-01-18 20:07:57,add role: CEO
+16,abdelffettah@gmail.com,2025-01-18 20:10:01,ASSIGN ROLE CEO TO PERMISSION: [Permission(id=5, name=MANAGER_READ, roles=[])]
+17,abdelffettah@gmail.com,2025-01-18 20:10:29,Change user: ADMINISTRATOR
+18,abdelffettah@gmail.com,2025-01-18 20:11:59,Update User: manager11@gmail.com
+19,abdelffettah@gmail.com,2025-01-18 20:13:45,Update User: manager11@gmail.com
+20,abdelffettah@gmail.com,2025-01-18 20:13:59,Generated Report: .\data\csv\employees_report.csv

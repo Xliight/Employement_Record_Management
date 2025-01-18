@@ -1,0 +1,65 @@
+#version: "3.8"
+#services:
+#  oracle:
+#    image: gvenzl/oracle-xe  # Choose the Oracle image version you want to use
+#    container_name: oracle-db
+#    environment:
+#      - ORACLE_PASSWORD=root  # Make sure you set the Oracle user password
+#      - ORACLE_SID=XE
+#    ports:
+#      - "1521:1521"
+#      - "5500:5500"  # If you want to enable Oracle SQL Developer Web
+#    volumes:
+#      - ./init-scripts:/opt/oracle/scripts/setup  # Path to the scripts for DB initialization
+#    networks:
+#      - oracle_network
+#
+#  spring-app:
+#    image: emp  # Replace with your Spring Boot app Docker image
+#    depends_on:
+#      - oracle
+#
+#    networks:
+#      - oracle_network
+#
+#networks:
+#  oracle_network:
+#    driver: bridge
+
+version: '3.8'
+services:
+  db:
+    image: gvenzl/oracle-xe
+    container_name: db
+    environment:
+      - ORACLE_PASSWORD=root
+    ports:
+      - "1521:1521"
+      - "5000:5000"
+    networks:
+      - my-network
+
+  spring-app:
+    image: emp
+    container_name: spring-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - my-network
+    volumes:
+      - web_data:/app/data/csv
+
+networks:
+  my-network:
+    driver: bridge
+
+volumes:
+  web_data:
+      driver: local
+
+
+
+
+
