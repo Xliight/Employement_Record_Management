@@ -1,6 +1,7 @@
 # **Employement_Records_Managementse**
 
 The Employee Records Management System (ERMS) is a powerful tool for efficient employee data management, centralizing control, robust record-keeping, and providing insightful reporting features.
+ Swagger: http://localhost:8080/swagger-ui/index.html#/
 
 ## **Introduction**
 
